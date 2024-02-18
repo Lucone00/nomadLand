@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nomadLand:build:production"
+              "buildTarget": "nomadLand:build:production"
             },
             "development": {
-              "browserTarget": "nomadLand:build:development"
+              "buildTarget": "nomadLand:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nomadLand:build"
+            "buildTarget": "nomadLand:build"
           }
         },
         "test": {
