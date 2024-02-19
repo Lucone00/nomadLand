@@ -1,0 +1,11 @@
+.title {
+  background-color: #ec1c24;
+  width: 100%;
+  height: 100%;
+  & span {
+    font-size: 46px;
+    font-family: "Kaushan Script", cursive, sans-serif;
+    color: #fff;
+    margin-bottom: 12rem;
+  }
+}

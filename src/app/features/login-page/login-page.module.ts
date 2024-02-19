@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WelcomePageComponent } from './welcome-page.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { LoginPageComponent } from './login-page.component';
 
 @NgModule({
-  declarations: [WelcomePageComponent],
+  declarations: [LoginPageComponent],
   imports: [CommonModule, SharedModule],
-  exports: [WelcomePageComponent]
+  exports: [LoginPageComponent],
 })
-export class WelcomePageModule {}
+export class LoginPageModule {}
