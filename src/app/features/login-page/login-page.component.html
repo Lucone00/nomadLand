@@ -9,27 +9,43 @@
           <div class="card-body p-5 text-center">
             <div class="mb-md-5 mt-md-4 pb-5">
               <h2 class="fw-bold mb-2 text-uppercase">Hello Nomad!</h2>
-              <p class="text-white-50 mb-5">
+              <p class="text-muted mb-5">
                 Please enter your email and password!
               </p>
 
-              <div class="form-outline form-white mb-4">
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
                 <input
                   type="email"
-                  id="typeEmailX"
-                  class="form-control form-control-lg"
+                  matInput
+                  placeholder="Ex. pat@example.com"
+                  [formControl]="emailFormControl"
                 />
-                <label class="form-label" for="typeEmailX">Email</label>
-              </div>
+                <mat-error
+                  *ngIf="
+                    emailFormControl.hasError('email') &&
+                    !emailFormControl.hasError('required')
+                  "
+                >
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
 
-              <div class="form-outline form-white mb-4">
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
                 <input
                   type="password"
-                  id="typePasswordX"
-                  class="form-control form-control-lg"
+                  matInput
+                  placeholder="password"
+                  [formControl]="passwordFormControl"
                 />
-                <label class="form-label" for="typePasswordX">Password</label>
-              </div>
+                <mat-error *ngIf="passwordFormControl.hasError('required')">
+                  Password is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
 
               <p class="small mb-5 pb-lg-2">
                 <a class="text-white-50" href="#!">Forgot password?</a>
