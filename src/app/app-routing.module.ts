@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPageComponent } from './features/login-page/login-page.component';
 import { WelcomePageComponent } from './features/welcome-page/welcome-page.component';
+import { RegisterPageComponent } from './features/register-page/register-page.component';
 
 const routes: Routes = [
   { path: 'home', component: WelcomePageComponent },
@@ -19,6 +20,14 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/login-page/login-page.module').then(
         (m) => m.LoginPageModule
+      ),
+  },
+  {
+    path: 'register',
+    component: RegisterPageComponent,
+    loadChildren: () =>
+      import('./features/register-page/register-page.module').then(
+        (m) => m.RegisterPageModule
       ),
   },
   { path: '**', redirectTo: 'home' },
