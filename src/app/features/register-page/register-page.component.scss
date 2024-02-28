@@ -1,0 +1,21 @@
+.container {
+  background-color: red;
+  height: 80vh;
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.form-group{
+  width: 100%;
+  height: 50%;
+}
+
+.form-field {
+  margin-top: 8rem !important;
+  width: 70%;
+}
+
+mat-error{
+  color: white
+}

@@ -16,6 +16,7 @@ export class RegisterPageComponent {
     this.registrationForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       username: ['', Validators.required],
+      lastTrip: ['', Validators.required],
     });
   }
 
