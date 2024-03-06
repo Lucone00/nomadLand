@@ -60,7 +60,13 @@
       </mat-form-field>
     </ng-container>
 
-    <div class="text-center">
+    <ng-container *ngIf="currentStep === 4">
+      <div class="text-center welcome-message">
+        <p>Welcome! You have received an email with login instructions.</p>
+      </div>
+    </ng-container>
+    
+    <div class="text-center" *ngIf="currentStep !== 4">
       <button
         mat-fab
         extended
@@ -71,6 +77,6 @@
         <span>Next</span>
         <mat-icon>chevron_right</mat-icon>
       </button>
-    </div>
+    </div>    
   </div>
 </form>
