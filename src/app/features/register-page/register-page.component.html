@@ -62,10 +62,24 @@
 
     <ng-container *ngIf="currentStep === 4">
       <div class="text-center welcome-message">
-        <p>Welcome! You have received an email with login instructions.</p>
+        <p>
+          <span class="h2-welcome">Welcome nomad!</span> You have received an
+          email with login instructions.
+        </p>
+      </div>
+      <div class="text-center">
+        <button
+          mat-fab
+          extended
+          color="warn"
+          (click)="redirectToLogin()"
+          class="login-button"
+        >
+          <span>Go to login</span>
+        </button>
       </div>
     </ng-container>
-    
+
     <div class="text-center" *ngIf="currentStep !== 4">
       <button
         mat-fab
@@ -77,6 +91,6 @@
         <span>Next</span>
         <mat-icon>chevron_right</mat-icon>
       </button>
-    </div>    
+    </div>
   </div>
 </form>

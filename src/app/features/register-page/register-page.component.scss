@@ -1,12 +1,12 @@
 .container {
   background-color: red;
   height: 80vh;
-  width: 100%;
+  width: 70%;
   margin-top: 3rem;
   border-radius: 1rem;
 }
 
-.form-group{
+.form-group {
   width: 100%;
   height: 50%;
 }
@@ -16,8 +16,8 @@
   width: 70%;
 }
 
-mat-error{
-  color: white
+mat-error {
+  color: white;
 }
 
 .text-center {
@@ -25,9 +25,16 @@ mat-error{
 }
 
 .welcome-message {
-  font-size: 20px;
-  color: white; 
-  padding: 20px; 
-  margin: 20px 0;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  line-height: 1.5;
+  font-family: "Kaushan Script", cursive, sans-serif;
+  margin: auto;
+  & .h2-welcome {
+    font-size: 2rem;
+  }
 }
-

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-page',
@@ -12,7 +13,7 @@ export class RegisterPageComponent {
   isNextButtonDisabled = false;
   isCurrentFieldValid = false;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.registrationForm = this.fb.group({
@@ -51,6 +52,10 @@ export class RegisterPageComponent {
   nextStep() {
     this.currentStep++;
     this.updateButtonState();
+  }
+
+  redirectToLogin() {
+    this.router.navigate(['/login']);
   }
 
   onSubmit() {
