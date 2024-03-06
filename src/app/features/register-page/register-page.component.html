@@ -55,14 +55,19 @@
           type="text"
           matInput
           formControlName="lastTrip"
-          
           placeholder="Ex. Bali"
         />
       </mat-form-field>
     </ng-container>
 
     <div class="text-center">
-      <button mat-fab extended color="warn" (click)="nextStep()">
+      <button
+        mat-fab
+        extended
+        color="warn"
+        (click)="nextStep()"
+        [disabled]="!isCurrentFieldValid"
+      >
         <span>Next</span>
         <mat-icon>chevron_right</mat-icon>
       </button>
