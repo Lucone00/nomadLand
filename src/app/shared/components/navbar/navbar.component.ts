@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  toggleNotificationsDropdown(event: Event): void {
+    event.preventDefault();
+  }
 }

@@ -7,6 +7,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from '../components/navbar/navbar.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 
 @NgModule({
   declarations: [NavbarComponent],
@@ -19,6 +21,7 @@ import { NavbarComponent } from '../components/navbar/navbar.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    BsDropdownModule,
   ],
   exports: [
     CommonModule,
@@ -29,7 +32,8 @@ import { NavbarComponent } from '../components/navbar/navbar.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    NavbarComponent
+    NavbarComponent,
+    BsDropdownModule
   ],
 })
 export class SharedModule {}
