@@ -6,6 +6,8 @@
   border-radius: 1.8rem;
   padding: 1rem;
   z-index: 9999;
+  -webkit-box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.41);
+  box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.41);
 
   .container {
     padding: 0;
