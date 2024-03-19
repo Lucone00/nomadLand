@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FloatingMenuComponent } from '../components/floating-menu/floating-menu/floating-menu.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     FormsModule,
     ReactiveFormsModule,
     BsDropdownModule,
+    FloatingMenuComponent
   ],
   exports: [
     CommonModule,
@@ -33,7 +35,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     FormsModule,
     ReactiveFormsModule,
     NavbarComponent,
-    BsDropdownModule
+    BsDropdownModule,
+    FloatingMenuComponent
   ],
 })
 export class SharedModule {}
