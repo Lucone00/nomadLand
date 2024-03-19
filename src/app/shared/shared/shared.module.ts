@@ -9,10 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FloatingMenuComponent } from '../components/floating-menu/floating-menu/floating-menu.component';
+import { FriendsPageComponent } from 'src/app/features/homepage/components/friends-page/friends-page.component';
 
 
 @NgModule({
-  declarations: [NavbarComponent, FloatingMenuComponent],
+  declarations: [NavbarComponent, FloatingMenuComponent, FriendsPageComponent],
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -35,7 +36,8 @@ import { FloatingMenuComponent } from '../components/floating-menu/floating-menu
     ReactiveFormsModule,
     NavbarComponent,
     BsDropdownModule,
-    FloatingMenuComponent
+    FloatingMenuComponent,
+    FriendsPageComponent
   ],
 })
 export class SharedModule {}
