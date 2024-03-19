@@ -12,7 +12,7 @@ import { FloatingMenuComponent } from '../components/floating-menu/floating-menu
 
 
 @NgModule({
-  declarations: [NavbarComponent],
+  declarations: [NavbarComponent, FloatingMenuComponent],
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -22,8 +22,7 @@ import { FloatingMenuComponent } from '../components/floating-menu/floating-menu
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    BsDropdownModule,
-    FloatingMenuComponent
+    BsDropdownModule
   ],
   exports: [
     CommonModule,
