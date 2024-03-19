@@ -4,3 +4,9 @@
   font-family: "Kaushan Script", cursive, sans-serif;
   margin-left: 1rem;
 }
+
+@media (max-width: 464px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
