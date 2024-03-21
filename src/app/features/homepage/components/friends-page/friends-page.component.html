@@ -1,18 +1,20 @@
-<div class="card mt-4 mb-4">
-  <div class="card-body">
-    <div class="card-body-img">
-      <img src="url_dell_immagine" alt="Immagine" />
-    </div>
-    <div class="card-description">
-      <div class="profile-header">
-        <div class="profile-picture">
-          <img src="../../../../../assets/myphoto.png" alt="Immagine" />
-        </div>
-        <div class="profile-info">
-          <span>Nome Utente</span>
-        </div>
+<div class="container">
+  <div class="card mt-4 mb-4" *ngFor="let image of images; let i = index">
+    <div class="card-body">
+      <div class="card-body-img">
+        <img [src]="image.urls.full" alt="Immagine {{ i }}" />
       </div>
-      <p>Descrizione dell'utente.</p>
+      <div class="card-description">
+        <div class="profile-header">
+          <div class="profile-picture">
+            <img [src]="image.user.profile_image.medium" alt="Immagine" />
+          </div>
+          <div class="profile-info">
+            <span>{{ image.user.name }}</span>
+          </div>
+        </div>
+        <p>Descrizione dell'immagine: {{ image.description }}</p>
+      </div>
     </div>
   </div>
 </div>
