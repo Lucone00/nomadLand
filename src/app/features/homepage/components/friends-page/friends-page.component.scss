@@ -1,5 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+}
+
 .card {
-  width: 270px;
   background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -22,13 +32,13 @@
 
   .card-body {
     background: linear-gradient(to top, #131313cc 0%, #6b6b6b00 50%);
+  }
 
-    .card-body-img img {
-      width: 100%;
-      height: auto;
-      min-height: 150px;
-      display: block;
-    }
+  .card-body-img img {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    display: block;
   }
 
   .card-description {
