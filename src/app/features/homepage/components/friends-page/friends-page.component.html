@@ -1,10 +1,10 @@
 <div class="container">
   <div class="card-container">
     <div class="card mt-4 mb-4" *ngFor="let image of images; let i = index">
-      <div class="card-body">
-        <div class="card-body-img">
-          <img [src]="image.urls.full" alt="Immagine {{ i }}" />
-        </div>
+      <div
+        class="card-body"
+        [style.backgroundImage]="'url(' + image.urls.full + ')'"
+      >
         <div class="card-description">
           <div class="profile-header">
             <div class="profile-picture">
@@ -14,7 +14,7 @@
               <span>{{ image.user.name }}</span>
             </div>
           </div>
-          <p>{{ image.description }}</p>
+          <p class="description">{{ image.description }}</p>
         </div>
       </div>
     </div>
