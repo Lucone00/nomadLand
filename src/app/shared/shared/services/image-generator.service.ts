@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ImageGeneratorService {
   private apiUrl = 'https://api.unsplash.com/photos/random?query=nomadis';
-  private accessToken = '-sWT7rBhTkvm6bEQh7px7lNSsMllaeDxsQUakB9URJE';
+  private accessToken = 'eYCO3sSG58Xv__V53yRHeY9OWrlMkZVKfLFAeeHIsvI';
 
   constructor(private http: HttpClient) {}
 
