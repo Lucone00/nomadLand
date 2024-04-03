@@ -1,5 +1,9 @@
 <div class="container">
-  <button (click)="scrollLeft()" [disabled]="currentIndex === 0">
+  <button
+    class="scroll-button left"
+    (click)="scrollLeft()"
+    [disabled]="currentIndex === 0"
+  >
     <i class="fa-solid fa-chevron-left" style="color: #b0b0b0"></i>
   </button>
   <div class="card-container">
@@ -23,6 +27,7 @@
     </div>
   </div>
   <button
+    class="scroll-button right"
     (click)="scrollRight()"
     [disabled]="currentIndex >= images.length - 4"
   >
