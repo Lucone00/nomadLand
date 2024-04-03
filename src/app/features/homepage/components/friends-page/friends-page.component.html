@@ -17,11 +17,11 @@
             <div class="profile-picture">
               <img [src]="image.user.profile_image.medium" alt="Immagine" />
             </div>
-            <div class="profile-info">
+            <div class="profile-user bg-danger">
               <span>{{ image.user.name }}</span>
             </div>
           </div>
-          <p class="description">{{ image.description }}</p>
+          <span *ngIf="image.description" class="description">{{ image.description }}</span>
         </div>
       </div>
     </div>
