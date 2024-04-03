@@ -7,7 +7,7 @@
     <i class="fa-solid fa-chevron-left" style="color: #b0b0b0"></i>
   </button>
   <div class="card-container">
-    <div class="card mt-4 mb-4" *ngFor="let image of visibleImages">
+    <div class="card mb-4" *ngFor="let image of visibleImages">
       <div
         class="card-body"
         [style.backgroundImage]="'url(' + image.urls.full + ')'"
